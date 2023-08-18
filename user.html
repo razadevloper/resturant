@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration-form</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/user.css">
+</head>
+
+<body>
+    <section class="user-tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="user-icon">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+                    <div class="tabs-head">
+                        <h1>USER PROFILE</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="left-tabs">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'dashboard')" id="defaultOpen">Dashboard</button>
+                            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Edit Profile</button>
+                            <button class="tablinks" onclick="openCity(event, 'Paris')">Change Password</button>
+                            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Order History</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="right-tab">
+                                <div id="dashboard" class="tabcontent">
+                                    <div class="d-head">
+                                        <h2>Dashboard</h2>
+                                    </div>
+                                    <div class="row card-main" data-aos="zoom-in-right" data-aos-duration="1000">
+                                        <div class="col-md-4">
+                                            <div class="dash-card">
+                                                <div class="card">
+                                                    <h2>Total Order</h2>
+                                                    <p>1024</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="dash-card">
+                                                <div class="card">
+                                                    <h2>Total Order</h2>
+                                                    <p>1024</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="dash-card">
+                                                <div class="card">
+                                                    <h2>Total Order</h2>
+                                                    <p>1024</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="right-tab">
+                                <div id="London" class="tabcontent">
+                                    <div class="p-head">
+                                        <h2>Edit Profile</h2>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="edit-form">
+                                                <form action="" class=" user-form form-control">
+                                                    <label for="">Name</label>
+                                                    <input type="text" placeholder="Enter Name">
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="edit-form">
+                                                <form action="" class=" user-form form-control">
+                                                    <label for="">Email</label>
+                                                    <input type="email" placeholder="Enter Email">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="edit-form">
+                                                <form action="" class=" user-form form-control">
+                                                    <label for="">Phone No.</label>
+                                                    <input type="number" placeholder="Enter No.">
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="edit-form">
+                                                <form action="" class=" user-form form-control">
+                                                    <label for="">Email</label>
+                                                    <input type="email" placeholder="Enter Email">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-tab">
+                        <!-- <div id="London" class="tabcontent">
+                            <h3>London</h3>
+                            <p>London is the capital city of England.</p>
+                        </div> -->
+                        
+                        <div id="dashboard" class="tabcontent">
+                            <h3>Paris</h3>
+                            <p>Paris is the capital of France.</p>
+                        </div>
+                        
+                        <div id="Tokyo" class="tabcontent">
+                            <h3>Order History</h3>
+                            <p>check your order History</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

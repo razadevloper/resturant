@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.user-tabs{
+    margin-top: 20px;
+}
+.user-tabs .tabs-head h1{
+    padding-top: 20px;
+    color: green;
+    padding-bottom: 20px;
+}
+.user-tabs .user-icon i{
+    padding-top: 25px;
+    padding-left: 100px;
+    font-size: 60px;
+    color: green;
+}
+.tab {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    padding: 20px;
+    border-radius: 10px;
+}
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    /* color: black; */
+    padding: 15px 16px;
+    width: 100%;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: green;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  /* Create an active/current "tab button" class */
+  /* .tab button.active {
+    background-color: green;
+    color: #fff;
+    border-radius: 10px;
+} */
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: block;
+    padding: 12px 29px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+@media (max-width:700px){
+    .tabcontent{
+        margin-left: 0;
+    }
+}
+.p-head h2{
+    color: green;
+    padding-top: 20px;
+}
+.user-form {
+    border: none;
+    padding-top: 30px;
+}
+.user-form input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid green;
+}
+.user-form label{
+    font-size: 20px;
+    padding-right: 10px;
+}
+.user-form input:focus{
+    outline: green;
+}
+.right-tab .d-head h2{
+    color: green;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.card-main{
+    padding-left: 20px;
+}
+.dash-card{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.dash-card .card{
+    height: 120px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(1);
+}
+.dash-card .card h2{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 26px;
+}
+.dash-card .card p{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    color: green;
+}
+.dash-card .card:hover{
+    transform: scale(1.1);
+}
+@media (max-width:700px){
+    .right-tab{
+        margin-top: 25px;
+    }
+}
+@media (max-width:280px){
+    .tabs-head h1{
+        text-align: center;
+    }
+    .right-tab .d-head h2{
+        text-align: center;
+    }
+    .user-form label{
+        padding-bottom: 15px;
+    }
+    .tab{
+        padding-top: 10px;
+    }
+    .user-form{
+        padding-top: 15px;
+    }
+}
+@media (max-width:320px){
+    .user-tabs .tabs-head h1{
+        text-align: center;
+    }
+    .user-form{
+        padding-top: 15px;
+    }
+    .p-head h2, .right-tab .d-head h2{
+        text-align: center;
+    }
+    .user-form label{
+        padding-bottom: 15px;
+    }
+}

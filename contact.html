@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aboutus</title>
+    <!--boostrap link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--js link start-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/menu.js"></script>
+</head>
+
+<body>
+    <div class="row navbar">
+        <div class="col-md-3 col-sm-12">
+            <div class="logo">
+                <img src="image/grab_food.png" alt="" height="" width="auto">
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-9">
+            <nav>
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href=""><i class="fa fa-face-smile"></i> Dishes</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Non-Vegetarian</a></li>
+                            <li><a href="">Vegetarian</a></li>
+                            <li><a href="">Sweets</a></li>
+                            <li><a href="">Fast Food</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="login.html"><i class="fa fa-sign-in"></i> LogIn</a></li>
+                <li><a href="about.html"><i class="fa fa-info-circle"></i> About us</a></li>
+                <li><a href=""><i class="fa fa-image"></i> Gallery</a></li>
+                <li><a href="contact.html"><i class="fa fa-question"></i> Help</a></li>
+                <li><a href="user.html"><i class="fa fa-user"></i> User</a></li>
+            </nav>
+        </div>
+    </div>
+    <div class="row m-navbar">
+        <div class="col-md-2 col-sm-2" style="float: left;">
+            <i class="fa fa-bars" onclick="openNav()"><a href="login.html"><i class="fa fa-user"
+                        style="float: right;display: block;padding: 0 0;"> LogIn</i></a></i>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav navbar1">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <li><a href="index.html"><i class="fa fa-home"
+                    style="float: left;padding: 6px 8px 8px 0px;"></i>Home</a></li>
+        <li onclick="navdropdown()"><a href="#"><i class="fa fa-pizza-slice"
+                    style="float: left;padding: 6px 8px 8px 0px;"></i>Dishes <i
+                    style="float: right;padding: 8px 0px 8px 0px;" id="drop-icon" class="fa fa-caret-right"></i></a>
+            <div id="m-submenu">
+                <ul>
+                    <li><a href="javascript:void(0)">Non-Vegetarian<i style="float: right;padding: 8px 0px 8px 0px;"
+                                class="fa fa-plus"></i></a></li>
+                    <li><a href="javascript:void(0)">Vegetarian<i style="float: right;padding: 8px 0px 8px 0px;"
+                                class="fa fa-eye"></i></a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="login.html" style="padding-top: 0px;"><i class="fa fa-sign-in" style="float: left;padding: 6px 8px 10px 15px;"></i>LogIn</a></li>
+        <li><a href="about.html"><i class="fa fa-info-circle" style="float: left;padding: 6px 8px 8px 0px;"></i>About Us</a></li>
+        <li><a href="javascript:void(0)"><i class="fa fa-image" style="float: left;padding: 6px 8px 8px 0px;"></i>Gallery</a></li>
+        <li><a href="javascript:void(0)"><i class="fa fa-question" style="float: left;padding: 6px 8px 8px 0px;"></i>Help</a></li>
+        <li><a href="user.html"><i class="fa fa-user" style="float: left;padding: 6px 8px 8px 0px;"></i>User</a></li>
+    </div>
+    <section class="top-banner">
+        <div class="banner-inner">
+            <img src="image/contact2.jpg">
+            <div class="inner-head">
+                <h3>Contact Us</h3>
+                <p><a href="index.html">Home</a> <span>/</span> <a href="#0">Contact Us</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="contact-sec">
+        <div class="container">
+            <div class="row person-cotact">
+                <div class="col-md-6">
+                    <div class="contact-img">
+                        <img src="image/contact-head.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cont-form-head">
+                                <h2>Talk With Our Team </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="form">
+                                <form class="form-control">
+                                    <label for="">Name</label>
+                                    <input type="text" placeholder=" Enter Name" class="form-control">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form">
+                                <form class="form-control">
+                                    <label for="">Email</label>
+                                    <input type="email" placeholder=" Enter Email" class="form-control">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container" data-aos="fade-right" data-aos-duration="1000">
+            <div class="row footer">
+                <div class="col-md-4 col-sm-12">
+                    <h4 class="text-center" style="color: green; margin-top: 15px;">About Us</h4>
+                    <hr style="background-color: green;">
+                    <p style="text-align: justify; color: black;">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Labore
+                        impedit dolor ullam nesciunt, ducimus laudantium omnis totam rem alias, commodi quibusdam?
+                        Esse nulla vel, similique numquam explicabo dolorem natus harum.</p>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <h4 class="text-center" style="font-family: redo; color: green;margin-top: 15px;">Quick Links
+                    </h4>
+                    <hr style="background-color: green;">
+                    <div class="quik">
+                        <ul>
+                            <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                            <li><a href="about.html"><i class="fa fa-info-circle"></i> About</a></li>
+                            <li><a href="#"><i class="fa fa-image"></i> Gallery</a></li>
+                            <li><a href="#"><i class="fa fa-question"></i> Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <h4 class="text-center" style="color: green; font-family: redo;margin-top: 15px;">Social Media
+                    </h4>
+                    <hr style="background-color: green;">
+                    <div class="social-media">
+                        <ul>
+                            <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://instagram.com/mrraza_69?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa fa-instagram"></i> Instagram</a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+                            <li><a href=""><i class="fa fa-snapchat"></i> Snapchat</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h4 class="text-center" style="color:green;font-family:redo;margin-top: 15px;">Contact us</h4>
+                    <hr style="background-color: green;">
+                    <div class="address">
+                        <h5>Address - </h5>
+                        <span>Aurbindopally Nawabganj North-Barrackpore 2 no Masjid Kanthadhar (North Pgs 24)
+                            <span>743144</span></span><br>
+                        <a href=""><i class="fa fa-phone"></i> 7296045983</a><br>
+                        <a href=""><i class="fa fa-envelope"></i> sohailraja6654@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container design-f">
+                <p class="text-center" style="color: green;">&COPY DESIGN AND DEVELOPED BY SOHAIL <i class="fa fa-heart"
+                        style="color: red;"></i> SAHANA</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed = new Typed(".auto-input", {
+            strings: [" HUNGARY STORE", "FOOD HUB"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

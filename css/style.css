@@ -483,3 +483,43 @@ footer .address a:hover {
   color: green;
   font-size: 25px;
 }
+@media (max-width:320px) {
+  .m-navbar .fa-user {
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+}
+
+.person-cotact {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-top: 40px;
+  border-radius: 10px;
+  margin-bottom: 41px;
+  padding-bottom: 30px;
+}
+.contact-sec .contact-img{
+  border-radius: 20px;
+  padding-top: 30px;
+}
+.contact-sec .contact-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+.contact-sec .cont-form-head h2{
+  text-align: center;
+  padding-top: 30px;
+  color: green;
+}
+.form {
+  padding-top: 20px;
+}
+.form form.form-control{
+  border: none;
+}
+.form form input{
+  border-radius: 10px;
+  border: 1px solid green;
+}
+.form form .form-control:focus{
+  border: 1px solid green;
+}

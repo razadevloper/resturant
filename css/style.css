@@ -511,7 +511,7 @@ footer .address a:hover {
   color: green;
 }
 .form {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .form form.form-control{
   border: none;

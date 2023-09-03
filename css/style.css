@@ -514,6 +514,7 @@ footer .address a:hover {
   margin-top: 20px;
 }
 .form form.form-control{
+  margin-top: 20px;
   border: none;
 }
 .form form input{

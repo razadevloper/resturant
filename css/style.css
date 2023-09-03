@@ -11,7 +11,7 @@
 
 .navbar {
   height: 85px;
-  background-color: gray;
+  background-color: #000;
 }
 
 .navbar .logo {
@@ -53,7 +53,7 @@
   z-index: 1;
   display: none;
   position: absolute;
-  background: gray;
+  background: #000;
   left: 101px;
   border-radius: 10px;
 }
@@ -110,7 +110,7 @@
 }
 
 .m-navbar {
-  background-color: gray;
+  background-color: #000;
   height: 50px;
 }
 
@@ -129,7 +129,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: gray;
+  background-color: #000;
   color: gray;
   overflow-x: hidden;
   padding-top: 60px;

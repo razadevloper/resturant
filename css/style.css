@@ -549,8 +549,6 @@ footer .address a:hover {
   background-color: green;
 }
 textarea {
-    overflow: auto;
-    resize: vertical;
     width: 100%;
     border: 1px solid green;
     border-radius: 10px;

@@ -511,7 +511,7 @@ footer .address a:hover {
   color: green;
 }
 .form {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .form form.form-control{
   margin-top: 20px;
@@ -523,4 +523,15 @@ footer .address a:hover {
 }
 .form form .form-control:focus{
   border: 1px solid green;
+}
+.submit-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   margin-top: 105px;
+}
+.submit-button button{
+  padding: 8px 30px;
+  font-size: 25px;
+  background-color: green;
 }

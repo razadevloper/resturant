@@ -548,3 +548,10 @@ footer .address a:hover {
   font-size: 25px;
   background-color: green;
 }
+textarea {
+    overflow: auto;
+    resize: vertical;
+    width: 100%;
+    border: 1px solid green;
+    border-radius: 10px;
+}

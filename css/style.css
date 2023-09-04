@@ -524,6 +524,19 @@ footer .address a:hover {
 .form form .form-control:focus{
   border: 1px solid green;
 }
+.form #your-message label{
+  display: block;
+   padding-top: 20px;
+}
+.form form textarea{
+  width: 100%;
+  border: 1px solid green;
+  border-radius: 10px;
+  height: 80px;
+}
+.form form .form-control textarea:focus{
+  border: 1px solid green;
+}
 .submit-button{
   display: flex;
   justify-content: center;

@@ -553,3 +553,8 @@ textarea {
     border: 1px solid green;
     border-radius: 10px;
 }
+@media (max-width: 700px){
+  .form form .form-control{
+    margin-top: 20px;
+  }
+}
